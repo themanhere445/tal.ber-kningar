@@ -1,0 +1,27 @@
+Börja programmet
+Visa "Välkommen till gissningsspelet! Gissa ett tal mellan 1 och 100."
+
+Skapa ett slumpmässigt tal mellan 1 och 100 och spara det som hemligt_tal
+Sätt antal_försök till 0
+Sätt korrekt till falskt
+
+Medan korrekt är falskt
+    Be spelaren skriva sin gissning
+    Läs in gissningen som text
+
+    Om texten inte kan omvandlas till ett heltal
+        Visa "Ogiltig input. Ange ett heltal mellan 1 och 100."
+        Hoppa tillbaka till början av loopen
+
+    Öka antal_försök med 1
+
+    Om gissningen är lika med hemligt_tal
+        Visa "Rätt tal! Det tog antal_försök försök."
+        Sätt korrekt till sant
+    Annars om gissningen är mindre än hemligt_tal
+        Visa "Gissningen är för låg."
+    Annars
+        Visa "Gissningen är för hög."
+
+Visa "Tryck på valfri tangent för att avsluta..."
+Avsluta programmet
